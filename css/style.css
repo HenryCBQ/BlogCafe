@@ -1,0 +1,7 @@
+/*Configuración para trabajar con la medida rem, dónde un rem equivale a 10px*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before,*:after {box-sizing: inherit;}
+
