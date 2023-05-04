@@ -161,11 +161,13 @@ img{
     border: none;
     margin-bottom: 0;
 }
-.widget-curso__label{
+.widget-curso__label,
+.curso__label{
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
-.widget-curso__info{
+.widget-curso__info,
+.curso__info{
     font-weight: 400;
 }
 
@@ -182,5 +184,25 @@ img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
+    }
+}
+
+/*Estilos pagina cursos*/
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);    
+}
+.curso:last-of-type{ /*Selecciono la ultima entrada y le quito la linea*/
+    border: none;
+}
+@media (min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;    
+    }
+    .curso__informacion{
+        display: grid;
+        align-content: center;
     }
 }
